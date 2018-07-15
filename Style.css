@@ -1,0 +1,61 @@
+body,html {margin:0;height: 100%;}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: transparent;
+    z-index: 9999;
+    border: 0;
+    font-size: 14px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 5px;
+    border-radius: 0;
+    transition:500ms ease;
+}
+.navbar.scrolled{background:#000;}
+.navbar li a , .navbar-brand{color: #feffff !important;}
+.navbar-nav li a:hover, .navbar-brand:hover, .navbar-nav li.active a 
+ {color: #001f3f !important;background-color: #feffff !important;}
+.navbar .navbar-toggle {border-color: transparent;}
+.navbar .navbar-toggle .icon-bar{background-color: #feffff !important;}
+.bg{
+  height:50%; 
+  background-color: #17252a;
+  color: #feffff;
+  text-align: center;
+}
+.bg h1{font-size: 40px;}
+
+.bgCancer{background-color: #a8d0e6; margin-top: 3px;}
+.bgCancer h1 {color: #feffff;}
+
+.bgTb{background-color:#a8d0e6; margin-bottom: 3px;}
+.bgTb h1 {color: #feffff;}
+
+.bgHiv{background-color:#feffff;}
+.bgHiv h1 {color: #a8d0e6;}
+
+.bgCancer:hover a, .bgTb:hover a{
+  text-decoration: none;
+  text-decoration-color: #feffff;
+  text-decoration-style: solid;
+  text-decoration-line: underline;
+}
+.bgHiv:hover a{
+   text-decoration: none;
+  text-decoration-color: #a8d0e6;
+  text-decoration-style: solid;
+  text-decoration-line: underline;
+}
+
+.flinks a{
+  padding: 10px;
+  font-size: 25px;
+  color:  #feffff;
+}
+.fnav a{
+  padding: 10px;
+  font-size: 15px;
+  color:  #feffff;
+}
+.fnav a:hover{text-decoration: none;}
+

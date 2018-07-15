@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+</head>
+<body>
+
+<!--HEADING-->
+<div class="container-fluid bg"><h1 style="padding-top: 20px"><b>WELCOME<br>to<br>A-Z<br>INFORMATIONS</b></h1></div>
+<!-- NavBar --> 
+<nav class="navbar navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home"></span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-left">
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid" style="background-color: #a8d0e6; color: #feffff;margin-top: 3px; margin-bottom: 3px">
+  <h2 style="padding-top: 20px;" class="text-justify"><b>CONTACT ME</b></h2>
+      <div class="row">   
+          <div class="col-sm-7">
+            <form method="post">
+              <div class="row">
+                  <div class="col-sm-6 form-group">
+                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required> 
+                  </div>
+                  <div class="col-sm-6 form-group">
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                  </div>
+              </div>
+                    <textarea class="form-control" id="subject" name="subjects" placeholder="Subject" required></textarea><br>
+                    <textarea class="form-control" id="message" name="messages" placeholder="Message" rows="5"></textarea><br>
+              <div class="row">
+                  <div class="col-sm-12 form-group">
+                    <button class="btn btn-primary" type="submit" name="submit" value="Submit" style="width:100%">Send</button>
+                  </div>
+              </div>
+            </form>              
+          </div>
+          
+              <div class="col-sm-5 text-justify">
+                  <div class="row"> 
+                    <div class="col-sm-12" style="float: left; padding-left: 20px;">           
+                      <div><p><h3><b>Ankit Bapat</h3></p><p>Associate Consultant</p></div><br>
+                      <div><p><h4><b>Phone:</h4></p><p>9987664479</p></div><br>
+                      <div><p><h4><b>Email:</h4></p><p>ankit.bapat@gmail.com</b></p></div><br>                          
+                    </div>
+                  </div>
+                  
+                </div>
+          </div>
+      </div>
+
+<!-- FOOTER -->
+<div class="container-fluid text-center" style="background-color: #17252a;">
+  <div class="row" style="padding-top: 20px;">
+    <div class="col-sm-12 flinks" style="padding: 10px;">
+            <a href="https://twitter.com/login?lang=en" target="_blank">
+              <i class="fa fa-twitter"></i></a>                              
+            <a href="https://www.facebook.com/ankit.bapat.5" target="_blank">
+              <i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/accounts/login/" target="_blank">
+              <i class="fa fa-instagram"></i></a>
+            <a href="https://plus.google.com/105483554879242439807" target="_blank">
+              <i class="fa fa-google-plus"></i></a> 
+    </div>    
+  </div>
+  <div class="row fnav" style="padding: 10px;">
+    <div class="col-sm-12">
+      <a href="about.html">ABOUT</a>
+      <a href="contact.html">CONTACT</a>
+    </div>
+  </div>
+  <div class="row" style="padding: 10px; color: white;">
+    <div class="col-sm-12">
+      <p>Copyright &#169 2018</p>
+    </div>
+  </div>
+</div>
+
+<script>
+$(window).scroll(function() {
+  $(".slideanim").each(function(){
+    var pos = $(this).offset().top;
+
+    var winTop = $(window).scrollTop();
+    if (pos < winTop + 600) {
+      $(this).addClass("slide");
+    }
+  });
+});
+
+$(window).scroll(function(){
+  $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+});  
+</script>
+
+</body>
